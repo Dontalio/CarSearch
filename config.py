@@ -42,6 +42,5 @@ class BotSet:
     FUNC_LIST = {
         'start': 'Первый и повторный запуск бота, регистрация',
         'search_car': 'search_car AA999A',
-        'help': 'Информационная справка о боте'
     }
 
