@@ -18,7 +18,7 @@ async def set_commands():
     for command, descript in func_list.items():
         commands.append(BotCommand(command=command, description=descript))
     print("команды меню бота:", *commands, sep=' || ')
-    await court_bot.set_my_commands(commands, BotCommandScopeDefault())
+    await car_bot.set_my_commands(commands, BotCommandScopeDefault())
     print('SUCCES for SET COMMANDS')
 
 async def main():
@@ -26,10 +26,10 @@ async def main():
     # scheduler.add_job(send_time_msg, 'interval', seconds=10)
     # scheduler.start() # планировка и запуск задачи
     include_routers()  # запускаем все роутеры
-    await court_bot.delete_webhook(
+    await car_bot.delete_webhook(
         drop_pending_updates=True)  # отключаем автообновление в окружении (skip_updates=True )
     await set_commands()  # сначала опеределим настройки бота (меню)
-    await dp.start_polling(court_bot)  # запуск поллинга (опроса АПИ TG)
+    await dp.start_polling(car_bot)  # запуск поллинга (опроса АПИ TG)
 
 
 if __name__ == '__main__':

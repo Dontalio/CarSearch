@@ -17,7 +17,7 @@ class BrowserSet:
 
         # Скрываем автоматизацию. Имитация реального пользователя
         options.add_argument(
-            "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36")
+            "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36")
 
         # Дополнительные опции для стабильности
         options.add_argument('--no-sandbox')  # Для Linux/docker

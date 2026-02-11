@@ -11,7 +11,7 @@ from config import BotSet as BS
 Для создания бота
 '''
 
-court_bot = Bot(token=BS.BOT_TOKEN,
+car_bot = Bot(token=BS.BOT_TOKEN,
           default=DefaultBotProperties(parse_mode=ParseMode.HTML))
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
